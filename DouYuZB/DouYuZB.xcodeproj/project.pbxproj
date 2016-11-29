@@ -17,7 +17,9 @@
 		182BE69F1DED72D600AD6075 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182BE69D1DED72D600AD6075 /* Live.storyboard */; };
 		182BE6A21DED72F000AD6075 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182BE6A01DED72F000AD6075 /* Follow.storyboard */; };
 		182BE6A51DED730E00AD6075 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182BE6A31DED730E00AD6075 /* My.storyboard */; };
-		182BE6A71DED744200AD6075 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BE6A61DED744200AD6075 /* MainViewController.swift */; };
+		182BE6AF1DED7A6E00AD6075 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BE6AC1DED7A6E00AD6075 /* MainViewController.swift */; };
+		182BE6B11DED7AFA00AD6075 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BE6B01DED7AFA00AD6075 /* HomeViewController.swift */; };
+		182BE6B41DED87DF00AD6075 /* UIBarButtonItme+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BE6B31DED87DF00AD6075 /* UIBarButtonItme+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		182BE69E1DED72D600AD6075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		182BE6A11DED72F000AD6075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		182BE6A41DED730E00AD6075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuZB/Base.lproj/My.storyboard; sourceTree = SOURCE_ROOT; };
-		182BE6A61DED744200AD6075 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		182BE6AC1DED7A6E00AD6075 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		182BE6B01DED7AFA00AD6075 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		182BE6B31DED87DF00AD6075 /* UIBarButtonItme+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItme+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +139,12 @@
 		182BE6901DED62BF00AD6075 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				182BE6961DED62BF00AD6075 /* Tools */,
 				182BE6941DED62BF00AD6075 /* Main */,
+				182BE6921DED62BF00AD6075 /* Home */,
 				182BE6931DED62BF00AD6075 /* Live */,
 				182BE6911DED62BF00AD6075 /* Follow */,
 				182BE6951DED62BF00AD6075 /* Profile */,
-				182BE6921DED62BF00AD6075 /* Home */,
+				182BE6961DED62BF00AD6075 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -156,7 +160,9 @@
 		182BE6921DED62BF00AD6075 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				182BE69A1DED726200AD6075 /* Home.storyboard */,
+				182BE6A91DED7A1800AD6075 /* Model */,
+				182BE6AA1DED7A1800AD6075 /* View */,
+				182BE6A81DED7A1800AD6075 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,8 +178,9 @@
 		182BE6941DED62BF00AD6075 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				182BE6661DED554900AD6075 /* Main.storyboard */,
-				182BE6A61DED744200AD6075 /* MainViewController.swift */,
+				182BE6AD1DED7A6E00AD6075 /* Model */,
+				182BE6AE1DED7A6E00AD6075 /* View */,
+				182BE6AB1DED7A6E00AD6075 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -189,8 +196,63 @@
 		182BE6961DED62BF00AD6075 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				182BE6B21DED877000AD6075 /* Extension */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		182BE6A81DED7A1800AD6075 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182BE69A1DED726200AD6075 /* Home.storyboard */,
+				182BE6B01DED7AFA00AD6075 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182BE6A91DED7A1800AD6075 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182BE6AA1DED7A1800AD6075 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		182BE6AB1DED7A6E00AD6075 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182BE6661DED554900AD6075 /* Main.storyboard */,
+				182BE6AC1DED7A6E00AD6075 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182BE6AD1DED7A6E00AD6075 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182BE6AE1DED7A6E00AD6075 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		182BE6B21DED877000AD6075 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				182BE6B31DED87DF00AD6075 /* UIBarButtonItme+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182BE6B41DED87DF00AD6075 /* UIBarButtonItme+Extension.swift in Sources */,
 				182BE6631DED554900AD6075 /* AppDelegate.swift in Sources */,
-				182BE6A71DED744200AD6075 /* MainViewController.swift in Sources */,
+				182BE6AF1DED7A6E00AD6075 /* MainViewController.swift in Sources */,
+				182BE6B11DED7AFA00AD6075 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +441,7 @@
 				182BE6671DED554900AD6075 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		182BE66B1DED554900AD6075 /* LaunchScreen.storyboard */ = {
@@ -394,7 +458,7 @@
 				182BE69B1DED726200AD6075 /* Base */,
 			);
 			name = Home.storyboard;
-			path = ../Main;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 		182BE69D1DED72D600AD6075 /* Live.storyboard */ = {
