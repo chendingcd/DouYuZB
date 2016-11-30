@@ -19,6 +19,8 @@ private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
+    
+    fileprivate lazy var recommedVM: RecommendViewModel = RecommendViewModel()
 
     fileprivate lazy var collectionView: UICollectionView = {[unowned self] in
        
@@ -48,6 +50,8 @@ class RecommendViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
+        
+        loadData()
     }
 
 }
@@ -58,17 +62,27 @@ extension RecommendViewController{
     }
 }
 
+extension RecommendViewController{
+    fileprivate func loadData(){
+        recommedVM.requestData{
+            self.collectionView.reloadData()
+        }
+    }
+}
+
 extension RecommendViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        
+        return recommedVM.anchorGroups.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
         
-        return 4
+        let group = recommedVM.anchorGroups[section]
+        
+        return group.anchors.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -85,7 +99,10 @@ extension RecommendViewController: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        
+        headerView.group = recommedVM.anchorGroups[indexPath.section]
+        
         
         return headerView
     }
