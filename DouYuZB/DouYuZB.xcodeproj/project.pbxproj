@@ -14,6 +14,8 @@
 		181886121DEEAF70001BFECE /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181886101DEEAF70001BFECE /* CollectionHeaderView.xib */; };
 		181886151DEEBD7A001BFECE /* CollectionNomalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181886131DEEBD7A001BFECE /* CollectionNomalCell.swift */; };
 		181886161DEEBD7A001BFECE /* CollectionNomalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181886141DEEBD7A001BFECE /* CollectionNomalCell.xib */; };
+		181886191DEEC7D6001BFECE /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181886171DEEC7D6001BFECE /* CollectionPrettyCell.swift */; };
+		1818861A1DEEC7D6001BFECE /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181886181DEEC7D6001BFECE /* CollectionPrettyCell.xib */; };
 		182BE6631DED554900AD6075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182BE6621DED554900AD6075 /* AppDelegate.swift */; };
 		182BE6681DED554900AD6075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182BE6661DED554900AD6075 /* Main.storyboard */; };
 		182BE66A1DED554900AD6075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182BE6691DED554900AD6075 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		181886101DEEAF70001BFECE /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		181886131DEEBD7A001BFECE /* CollectionNomalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNomalCell.swift; sourceTree = "<group>"; };
 		181886141DEEBD7A001BFECE /* CollectionNomalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNomalCell.xib; sourceTree = "<group>"; };
+		181886171DEEC7D6001BFECE /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		181886181DEEC7D6001BFECE /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		182BE65F1DED554900AD6075 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182BE6621DED554900AD6075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		182BE6671DED554900AD6075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 				181886091DEE66DF001BFECE /* PageContentView.swift */,
 				181886131DEEBD7A001BFECE /* CollectionNomalCell.swift */,
 				181886141DEEBD7A001BFECE /* CollectionNomalCell.xib */,
+				181886171DEEC7D6001BFECE /* CollectionPrettyCell.swift */,
+				181886181DEEC7D6001BFECE /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 				182BE6681DED554900AD6075 /* Main.storyboard in Resources */,
 				182BE69F1DED72D600AD6075 /* Live.storyboard in Resources */,
 				182BE69C1DED726200AD6075 /* Home.storyboard in Resources */,
+				1818861A1DEEC7D6001BFECE /* CollectionPrettyCell.xib in Resources */,
 				182BE6A21DED72F000AD6075 /* Follow.storyboard in Resources */,
 				182BE6A51DED730E00AD6075 /* My.storyboard in Resources */,
 			);
@@ -434,6 +441,7 @@
 				1818860A1DEE66DF001BFECE /* PageContentView.swift in Sources */,
 				182BE6AF1DED7A6E00AD6075 /* MainViewController.swift in Sources */,
 				182BE6B81DED9A4A00AD6075 /* Common.swift in Sources */,
+				181886191DEEC7D6001BFECE /* CollectionPrettyCell.swift in Sources */,
 				182BE6B11DED7AFA00AD6075 /* HomeViewController.swift in Sources */,
 				1818860C1DEE6A43001BFECE /* UIColor+Extension.swift in Sources */,
 			);
