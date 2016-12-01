@@ -17,7 +17,7 @@ class AnchorGroup: NSObject {
             }
         }
     }
-    var tag_name : String = ""
+    var tag_name : String = "颜值"
     var icon_name : String = "home_header_normal"
     
     lazy var anchors: [AnchorModel] = [AnchorModel]()

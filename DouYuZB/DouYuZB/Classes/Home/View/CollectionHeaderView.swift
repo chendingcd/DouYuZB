@@ -17,6 +17,8 @@ class CollectionHeaderView: UICollectionReusableView {
     
     var group: AnchorGroup?{
         didSet{
+//            titleLabel = UILabel()
+//            titleLabel.text = ""
             //titleLabel.text = group?.tag_name
             iconImageView.image = UIImage(named: group?.icon_name ?? "")
         }

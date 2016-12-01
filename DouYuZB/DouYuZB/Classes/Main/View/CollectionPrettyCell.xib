@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="122" height="141"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-VN-MbZ">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-VN-MbZ">
                         <rect key="frame" x="0.0" y="117" width="46" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="Xf7-Bv-VeM"/>
@@ -46,23 +46,24 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666在线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-W3-tcc">
-                        <rect key="frame" x="57" y="5" width="60" height="20"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2V-M4-6ES">
+                        <rect key="frame" x="54" y="8" width="60" height="20"/>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="uEe-hY-0Ti"/>
-                            <constraint firstAttribute="width" constant="60" id="xMY-XD-FyO"/>
+                            <constraint firstAttribute="width" constant="60" id="a9p-TN-ACw"/>
+                            <constraint firstAttribute="height" constant="20" id="lg8-db-RWH"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </label>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -71,14 +72,20 @@
                 <constraint firstAttribute="trailing" secondItem="JqC-Xd-SvU" secondAttribute="trailing" constant="5" id="EEj-kc-APW"/>
                 <constraint firstItem="HMJ-un-4JZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GGs-da-4AG"/>
                 <constraint firstAttribute="bottom" secondItem="b6c-VN-MbZ" secondAttribute="bottom" constant="10" id="IYp-Fv-L5P"/>
-                <constraint firstItem="fVe-W3-tcc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="KBd-3R-S3g"/>
-                <constraint firstAttribute="trailing" secondItem="fVe-W3-tcc" secondAttribute="trailing" constant="5" id="PL4-Bz-h2H"/>
                 <constraint firstAttribute="trailing" secondItem="HMJ-un-4JZ" secondAttribute="trailing" id="QdZ-ZL-Xwf"/>
+                <constraint firstAttribute="trailing" secondItem="j2V-M4-6ES" secondAttribute="trailing" constant="8" id="V9y-nV-mpe"/>
                 <constraint firstItem="HMJ-un-4JZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a3A-Po-aGx"/>
                 <constraint firstAttribute="bottom" secondItem="HMJ-un-4JZ" secondAttribute="bottom" constant="40" id="dKN-KZ-e5N"/>
                 <constraint firstItem="b6c-VN-MbZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kSy-c1-c9X"/>
+                <constraint firstItem="j2V-M4-6ES" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="pef-Ep-MQj"/>
             </constraints>
             <size key="customSize" width="122" height="141"/>
+            <connections>
+                <outlet property="cityBtn" destination="b6c-VN-MbZ" id="XsX-kE-0cy"/>
+                <outlet property="nikNameLabel" destination="JqC-Xd-SvU" id="PJK-oa-1PS"/>
+                <outlet property="onLineBtn" destination="j2V-M4-6ES" id="KbE-Eb-n1U"/>
+                <outlet property="scrImageView" destination="HMJ-un-4JZ" id="ocM-Zv-RKh"/>
+            </connections>
             <point key="canvasLocation" x="72" y="99.5"/>
         </collectionViewCell>
     </objects>
